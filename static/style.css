@@ -106,7 +106,7 @@ hr{
   color: var(--text-primary);
   font-weight: 600;
   font-size: 15px;
-  transition: 400ms;
+  transition: 200ms;
 }
 .button:hover {
   background-color: var(--gray-dark);

@@ -1,17 +1,14 @@
 :root {
-  /* === Brand colors === */
   --primary: #2563EB;      /* Blu elettrico */
   --primary-dark: #1E40AF; /* Variante più scura */
   --primary-light: #60A5FA;
 
-  /* === Neutral / industrial === */
   --black-tech: #0B0F14;   /* Nero tecnico */
   --gray-steel: #9CA3AF;   /* Grigio acciaio */
   --gray-dark: #374151;
   --gray-light: #E5E7EB;
   --white-cold: #F9FAFB;   /* Bianco freddo */
 
-  /* === UI === */
   --border-color: rgba(255, 255, 255, 0.1);
   --shadow-soft: 0 8px 32px rgba(0, 0, 0, 0.25);
 }
@@ -50,13 +47,25 @@ body {
   box-shadow: var(--shadow-soft);
 }
 
-#login-button {
+.title{
+  font-size: 30px;
+  margin-bottom: 36px;
+}
+
+hr{
+  border: none;
+  height: 1px;
+  width: 90%;
+  background-color: var(--gray-light);
+}
+
+.login-button {
   display: flex;
   justify-content: center;
   text-align: center;
   height: 50px;
   width: 300px;
-  margin-bottom: 2px;
+  margin-bottom: 12px;
   background-color: var(--gray-light);
   border-radius: 16px;
   border: none;
@@ -64,22 +73,23 @@ body {
   transition: 400ms;
 }
 
-#login-button .text {
+.login-button .text {
   color: var(--gray-dark);
   font-weight: 700;
   font-size: 15px;
   transition: 400ms;
 }
-#login-button:hover {
+.login-button:hover {
   background-color: var(--gray-dark);
   cursor: pointer;
 }
-#login-button:hover .text {
+.login-button:hover .text {
   color: var(--white-cold);
 }
 
 .button {
-  width: 100%;
+  position: relative;
+  width: 300px;
   height: 50px;
   margin-bottom: 2px;
   display: flex;
@@ -104,6 +114,18 @@ body {
 }
 .button:hover .text {
   color: var(--white-cold);
+}
+
+.badge {
+  position: absolute;
+  top: 5px;
+  right: 10px;
+  background-color: #F97316; /* arancio industriale */
+  color: white;
+  font-size: 12px;
+  font-weight: bold;
+  padding: 2px 6px;
+  border-radius: 12px;
 }
 
 .logout-button {
